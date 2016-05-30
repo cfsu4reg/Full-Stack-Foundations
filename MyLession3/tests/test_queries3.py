@@ -93,7 +93,7 @@ class Test(unittest.TestCase):
         self.session.add(menuItem1)
         self.session.commit()
                 
-        update_menu(self.session, menuItem1.id, "Noodle")
+        update_menu(self.session, menuItem1.id, MenuItem(name="Noodle"))
         found_item = select_menu_by_id(self.session, menuItem1.id)
         self.assertEqual(found_item.name, "Noodle", 'menu name was not updated')
         

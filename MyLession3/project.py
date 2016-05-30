@@ -48,7 +48,7 @@ def editMenuItem(restaurant_id, menu_id):
     restaurant = select_restaurant_by_id(db_session, restaurant_id)
     menu = select_menu_by_id(db_session, menu_id)
     if request.method == 'POST':
-        update_menu(db_session, menu_id, request.form['name'])
+        update_menu(db_session, menu_id, MenuItem(name = request.form['name']))
         flash("menu item updated")
         return redirect(url_for('restaurantMenu', restaurant_id = restaurant_id))
     else:
