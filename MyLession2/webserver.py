@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker 
 from sqlalchemy.ext.declarative import declarative_base
 
-from queries import select_all_restaurants, insert_restaurant, select_restaurant_by_id, update_restaurant,\
+from queries3 import select_all_restaurants, insert_restaurant, select_restaurant_by_id, update_restaurant,\
     delete_restaurant_by_id
 from restaurant_schema import Base, Restaurant, MenuItem
 

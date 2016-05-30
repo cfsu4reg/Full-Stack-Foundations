@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker 
 from sqlalchemy.ext.declarative import declarative_base
 
-from queries import select_all_restaurants, insert_restaurant, update_restaurant, select_restaurant_by_id,\
+from queries2 import select_all_restaurants, insert_restaurant, update_restaurant, select_restaurant_by_id,\
     delete_restaurant_by_id
 from restaurant_schema import Base, Restaurant, MenuItem
 
